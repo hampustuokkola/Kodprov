@@ -167,6 +167,7 @@ def run():
         if not re.match("^[\d*x\d*]+$", startposition):
             print("Error, format not accepted. Please try again.")
         else:
+            #Otroligt ful och lång if-sats
             if ((int(startposition.split("x")[0]) > int(roomsize.split("x")[0]) or int(startposition.split("x")[0]) <= 0)  or (int(startposition.split("x")[1]) > int(roomsize.split("x")[1]) or  int(startposition.split("x")[1]) <= 0)):
                 print("Error, the vacuum needs to be inside the room.")
             else:
